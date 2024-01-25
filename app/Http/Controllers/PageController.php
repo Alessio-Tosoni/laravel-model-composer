@@ -9,11 +9,11 @@ class PageController extends Controller
 {
     public function index()
     {
+        // $risposta = config("data");
         $dati = [
             "movies" => Movie::all()
         ];
-    
 
-        return view('home', $dati );
+        return view('home', $dati);
     }
 }

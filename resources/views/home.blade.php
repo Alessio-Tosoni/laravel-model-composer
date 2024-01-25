@@ -3,15 +3,15 @@
 @section('content')
     <h1>Movies</h1>
     
-    <ul>
-        @foreach ($libri as $libro)
-            <li>
-                <span>{{ $libro->name }}</span>
-                <img class="copertina" src="{{ $libro->cover }}" alt="">
-            </li>
+    
+        @foreach ($movies as $movie)
+            <div class="">
+                <h5>{{ $movie->title }}</h5>
+                <h6>{{ $movie->original_title }}</h6>
+            </div>
         @endforeach
-    </ul>
+    
    
 
-    <p>This is my paragraph content.</p>
+    
 @endsection
